@@ -25,11 +25,11 @@ screenshots:
 - url: /images/projects/bookfhr/screenshot_parking.png
   alt: Parking search results page
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 

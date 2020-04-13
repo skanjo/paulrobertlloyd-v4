@@ -25,11 +25,11 @@ screenshots:
 - url: /images/projects/waldo_pancake/screenshot_slideshow.png
   alt: Slideshow of Waldo Pancake merchandise
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 

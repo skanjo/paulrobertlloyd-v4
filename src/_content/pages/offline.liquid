@@ -6,7 +6,7 @@ introduction: Your network connection isn’t working right now, and this page i
 permalink: offline/
 ---
 {%- assign saved = collections.article | reverse %}
-{%- render 'section' with saved
+{%- include 'section' with saved
   id: 'saved'
   title: 'Articles available to read offline'
   items_limit: 6

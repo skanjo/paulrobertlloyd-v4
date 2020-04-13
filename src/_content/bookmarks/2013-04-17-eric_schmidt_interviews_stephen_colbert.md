@@ -8,6 +8,6 @@ category:
 - Eric Schmidt
 - Google
 ---
-{% render 'embed' with bookmark-of %}
+{% include 'embed' with bookmark-of %}
 
 The uncut interview of Stephen Colbert’s visit to Google’s New York office.

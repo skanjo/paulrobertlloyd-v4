@@ -5,7 +5,11 @@ module.exports = function (eleventy) {
   // Template libraries
   // Use own Liquid instance until 11ty upgrades to latest version
   // https://github.com/11ty/eleventy/issues/469
-  eleventy.setLibrary('liquid', require('./lib/libraries/liquid.js'));
+  eleventy.setLiquidOptions({
+    cache: true,
+    dynamicPartials: true,
+    root: ['./src/_includes', './src/_layouts']
+  });
   eleventy.setLibrary('md', require('./lib/libraries/markdown.js'));
 
   // Filters

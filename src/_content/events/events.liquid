@@ -13,15 +13,15 @@ changefreq: weekly
 priority: 0.9
 ---
 {% if pagination.pageNumber < 1 and collections.attending.size >= 1 -%}
-  {%- render 'section' with collections.attending
+  {%- include 'section' with collections.attending
     id: 'attending'
     title: 'Attending'
     item_modifier: 'inline'
   -%}
 {%- endif %}
-{%- render 'section' with pagination.items
+{%- include 'section' with pagination.items
   id: 'attended'
   title: 'Attended'
   item_modifier: 'inline'
 -%}
-{%- render 'pagination' with pagination -%}
+{%- include 'pagination' with pagination -%}

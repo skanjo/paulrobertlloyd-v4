@@ -28,11 +28,11 @@ screenshots:
   - url: /images/projects/nuts/screenshot_customtray.png
     alt: Custom tray configuration
 ---
-{% render 'screenshots' with screenshots.showcase
+{% include 'screenshots' with screenshots.showcase
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 
@@ -40,7 +40,7 @@ screenshots:
 
 Although successful, their site had grown organically over time, and had lost any design consistency and become difficult to navigate. Over a two-year period, I and other colleagues at Clearleft assisted CEO Jeff Braverman and lead programmer Ben Shakal in improving their site, ensuring the unique, customer-centred personality of the company wasn't lost in the desire to simplify and streamline.
 
-{% render 'screenshots' with screenshots.customtray
+{% include 'screenshots' with screenshots.customtray
   caption: 'One sprint focused on designing and testing a new custom tray creation experience.'
 %}
 

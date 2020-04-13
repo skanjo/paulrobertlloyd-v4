@@ -8,6 +8,6 @@ category:
 - Alan Partridge
 - Comedy
 ---
-{% render 'embed' with bookmark-of %}
+{% include 'embed' with bookmark-of %}
 
 “Time for big school.”

@@ -4,4 +4,4 @@ summary: Interested in working with me on your next project? Want me to speak at
 permalink: contact/
 priority: 0.5
 ---
-{% render 'form/contact' %}
+{% include 'form/contact' %}

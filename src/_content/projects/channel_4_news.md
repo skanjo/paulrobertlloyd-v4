@@ -32,11 +32,11 @@ screenshots:
   - url: /images/projects/channel_4_news/screenshot_catchup.png
     alt: Catch-up screen
 ---
-{% render 'screenshots' with screenshots.tablet
+{% include 'screenshots' with screenshots.tablet
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 
@@ -46,7 +46,7 @@ After redesigning their website, Channel 4 wished to reimagine the Channel 4 New
 
 Shortly after its launch Apple featured the app as App of the Week. In a few short weeks the application received over one hundred positive reviews, with an average rating of 4.5 stars.
 
-{% render 'screenshots' with screenshots.sections
+{% include 'screenshots' with screenshots.sections
   caption: 'Category, article and catch-up screens within the app.'
   image_preset: 'supporting'
   alignment: 'bleed'

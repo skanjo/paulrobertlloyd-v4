@@ -13,7 +13,7 @@ category:
 tags:
 - featured
 ---
-{% render 'figure' with '/images/2016/06/eu_referendum.jpg'
+{% include 'figure' with '/images/2016/06/eu_referendum.jpg'
   caption: 'Pastiche of Michelangelo’s <cite>The Creation of Adam</cite>, a modern reworking inspired by the same exercise I carried out twenty years ago.'
   alignment: 'bleed'
   image_ratio: 2.25
@@ -53,7 +53,7 @@ Is Europe perfect? Far from it. Could it be more democratic? Certainly — but t
 
 What could we achieve inside Europe if instead of complaining, obstructing and abstaining, we took a more proactive and positive role?
 
-{% render 'figure'
+{% include 'figure'
   embed: 'https://www.youtube.com/watch?v=gPX9MLALjAE'
   caption: 'Gordon Brown: Lead not Leave.'
 %}

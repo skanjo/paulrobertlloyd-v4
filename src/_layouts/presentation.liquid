@@ -1,9 +1,9 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'footer'
+  {%- include 'footer'
     date: date
   -%}
-  {%- render 'header'
+  {%- include 'header'
     title: title
     summary: summary
     vocab: vocab
@@ -11,12 +11,12 @@
   {%- capture content -%}
     {{- content -}}
     {%- for slide in slides -%}
-      {%- render 'figure' with slide.image
+      {%- include 'figure' with slide.image
         caption: slide.notes
         alignment: 'slide'
         image_preset: 'thumbnail'
       -%}
     {%- endfor -%}
   {%- endcapture -%}
-  {%- render 'content' with content -%}
+  {%- include 'content' with content -%}
 {%- endblock -%}

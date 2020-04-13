@@ -23,11 +23,11 @@ screenshots:
 - url: /images/projects/ngenera/screenshot_workshop.png
   alt: Workshop description page
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 
@@ -37,13 +37,13 @@ Steve Douty, President of Platforms, Applications and Marketing, asked me to tak
 
 With this intriguing new name, the logo needed to reflect the organisation’s broad ambition, and signify a break with any past notions of enterprise software. Combining an ‘n’ and ‘G’ was a subtle and intriguing way to symbolise interconnectedness while also creating a symbol similar to those commonly associated with networking and connectivity.
 
-{% render 'figure' with '/images/projects/ngenera/logo.svg'
+{% include 'figure' with '/images/projects/ngenera/logo.svg'
   caption: 'nGenera symbol and wordmark.'
 %}
 
 This distinctive mark could work at many sizes, with flat and rendered versions created to suit different applications. To account for a range of operating divisions, I created a brand architecture that meant future acquisitions could easily be integrated. With other in-house and third-party teams responsible for implementing the brand, I provided overall guidance and created example collateral pieces such as reports, signage and business cards. For the company’s web presence, I sought to distinguish nGenera by creating an immersive and premium experience, realised through the use of deep blues accented by highly saturated colours from the complementary palette.
 
-{% render 'figure' with '/images/projects/ngenera/collateral.png'
+{% include 'figure' with '/images/projects/ngenera/collateral.png'
   caption: 'Associated brand collateral, including presentation folders, report covers, letterheads and business cards.'
   alignment: 'bleed'
 %}

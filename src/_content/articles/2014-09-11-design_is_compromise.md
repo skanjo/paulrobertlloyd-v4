@@ -9,7 +9,7 @@ category:
 tags:
 - source:design_is
 ---
-{% render 'figure' with '/images/2014/09/design_is_compromise.jpg'
+{% include 'figure' with '/images/2014/09/design_is_compromise.jpg'
   caption: 'Illustration: [Max Randall](https://maxrandall.com).'
 %}
 

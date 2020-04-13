@@ -12,7 +12,7 @@ category:
 - United States
 discussion: closed
 ---
-{% render 'figure' with '/images/2009/02/thats_not_my_name.jpg'
+{% include 'figure' with '/images/2009/02/thats_not_my_name.jpg'
   caption: '“Coll” written on the side of a Starbucks cup.'
 %}
 

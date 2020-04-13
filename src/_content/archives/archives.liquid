@@ -5,13 +5,13 @@ permalink: archive/
 changefreq: weekly
 priority: 0.9
 ---
-{% render 'form/search' %}
+{% include 'form/search' %}
 {% assign archive = years | reverse %}
-{% render 'section-archives' with archive
+{% include 'section-archives' with archive
   id: 'browse',
   title: 'Browse by year'
 %}
-{%- render 'section' with other
+{%- include 'section' with other
   id: 'other'
   title: 'Other archives'
   component: 'section'

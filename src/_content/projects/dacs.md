@@ -31,11 +31,11 @@ screenshots:
   - url: /images/projects/dacs/screenshot_payback_furtherinfo.png
     alt: Further information about the Payback service
 ---
-{% render 'screenshots' with screenshots.homepage
+{% include 'screenshots' with screenshots.homepage
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 
@@ -49,21 +49,21 @@ After a period of analysis and prototyping, we realised the website needed diffe
 
 DACS had already undergone an extensive rebranding exercise for print but it needed assistance translating this to a digital environment. To understand the reasoning behind the different brand elements, I spent time with Simon Kennedy who was responsible for DACS’s identity and brand strategy. One outcome from this process was to deprecate the use of Didot; while it worked well in print, the typeface was ill-suited to screen, and few areas on the website needed to reflect the discursive tone for which it was intended.
 
-{% render 'screenshots' with screenshots.payback
+{% include 'screenshots' with screenshots.payback
   caption: 'Artist photography shown front and centre on a page introducing DACS’ Payback service. A restrained typographic pallet ensured legibility and visual consistency.'
   alignment: 'bleed'
 %}
 
 I drew on DACS’s photographic library of artists to give the organisation a human face. This imagery was combined with a restrained typographic pallet to ensure legibility and visual consistency, and supported by a selection of monochromatic patterns used to differentiate sections of the site.
 
-{% render 'figure' with '/images/projects/dacs/responsive.jpg'
+{% include 'figure' with '/images/projects/dacs/responsive.jpg'
   caption: 'A responsive layout meant the same content could be served to different devices, regardless of display size.'
   alignment: 'bleed'
 %}
 
 A pattern portfolio helped to ease handover to the development agency Cognite. Towards the end of the project I worked at their offices, helping them integrate these design patterns, making adjustments where necessary given the constraints of the CMS.
 
-{% render 'figure'
+{% include 'figure'
   content: '> It looks beautiful! The feedback so far has been great – and it’s just such a vast improvement on what we had before. Thank you so much for your hard work and general genius!'
   caption: 'Tania Spriggens, Director of Communications'
 %}

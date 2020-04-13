@@ -9,4 +9,4 @@ eleventyComputed:
   page_title: "{{ introduction }} · {{ app.title }}"
 ---
 {%- assign categories = collections.category | sort_natural -%}
-{%- render 'categories' with categories -%}
+{%- include 'categories' with categories -%}

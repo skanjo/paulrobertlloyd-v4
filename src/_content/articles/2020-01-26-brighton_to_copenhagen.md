@@ -20,7 +20,7 @@ tags:
 ---
 {%- capture overlay %}geojson({{ geojson | json | escape }}){% endcapture -%}
 {%- capture map -%}
-{%- render 'map'
+{%- include 'map'
   overlay: overlay
   width: 360
   height: 360
@@ -29,7 +29,7 @@ tags:
 
 ## Day 1: Brighton to Hamburg
 
-{% render 'figure'
+{% include 'figure'
   content: map
   caption: 'Route map: Brighton to Copenhagen via Hamburg.'
   alignment: 'pull'
@@ -51,7 +51,7 @@ Ideally, it would be possible to reach Copenhagen in a single day, but with no o
 
 I’m meeting my friend Sandra and her partner Andy for lunch, which gives me the morning to explore [Hamburger Kunsthalle][4], one of Hamburg’s many art galleries.
 
-{% render 'figure' with '/images/2020/01/brighton_to_copenhagen/wanderer_above_the_sea_of_fog.jpg'
+{% include 'figure' with '/images/2020/01/brighton_to_copenhagen/wanderer_above_the_sea_of_fog.jpg'
   caption: '<cite>Wanderer above the Sea of Fog</cite> (Caspar David Friedrich, 1818)'
   alignment: 'pull'
   image_present: 'supporting'

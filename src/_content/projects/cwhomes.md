@@ -26,11 +26,11 @@ screenshots:
 - url: /images/projects/cwhomes/screenshot_property.png
   alt: Property detail page
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 

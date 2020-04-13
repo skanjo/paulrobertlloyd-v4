@@ -24,11 +24,11 @@ screenshots:
 - url: /images/projects/university_of_wales/screenshot_about.png
   alt: About page
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 

@@ -8,7 +8,7 @@ category:
 - Yosemite National Park
 - United States
 ---
-{% render 'embed' with bookmark-of
+{% include 'embed' with bookmark-of
   poster: 'https://i.vimeocdn.com/video/254218511'
 %}
 

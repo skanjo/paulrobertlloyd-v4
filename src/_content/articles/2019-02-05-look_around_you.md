@@ -12,7 +12,7 @@ tags:
 - featured
 - source:new_adventures_magazine
 ---
-{% render 'figure' with '/images/2019/02/illustration.png'
+{% include 'figure' with '/images/2019/02/illustration.png'
   caption: 'Illustration: [Geri Coady](http://hellogeri.com)'
   alignment: 'bleed'
   image_ratio: 2.25

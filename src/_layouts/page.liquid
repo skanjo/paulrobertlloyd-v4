@@ -1,9 +1,9 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'header'
+  {%- include 'header'
     title: title
     summary: summary
     vocab: vocab
   -%}
-  {%- render 'content' with content -%}
+  {%- include 'content' with content -%}
 {%- endblock -%}

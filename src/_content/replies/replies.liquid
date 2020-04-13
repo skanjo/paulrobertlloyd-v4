@@ -12,8 +12,8 @@ priority: 0.9
 eleventyComputed:
   page_title: "{{ title }} · {{ app.title }}"
 ---
-{%- render 'items' with pagination.items
+{%- include 'items' with pagination.items
   component: 'entry-untitled'
   item_modifier: 'inline'
 -%}
-{%- render 'pagination' with pagination -%}
+{%- include 'pagination' with pagination -%}

@@ -24,11 +24,11 @@ screenshots:
 - url: /images/projects/universal_playback/screenshot_showpage.png
   alt: Show page
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 

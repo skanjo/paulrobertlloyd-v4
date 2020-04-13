@@ -14,7 +14,7 @@ priority: 0.9
 ---
 {%- if pagination.pageNumber < 1 -%}
   {%- assign featured = collections.article | includes: 'data.tags','featured' | reverse -%}
-  {%- render 'section' with featured
+  {%- include 'section' with featured
     id: 'featured'
     title: 'Select articles'
     scrollable: true
@@ -23,16 +23,16 @@ priority: 0.9
     component: 'card'
     image_preset: 'card'
   -%}
-  {%- render 'section' with pagination.items
+  {%- include 'section' with pagination.items
     id: 'recent'
     title: 'Recent articles'
     item_modifier: 'inline'
   -%}
 {%- else -%}
-  {%- render 'items' with pagination.items
+  {%- include 'items' with pagination.items
     item_modifier: 'inline'
   -%}
 {%- endif %}
-{%- render 'traverse' with pagination
+{%- include 'traverse' with pagination
   label: 'articles'
 -%}

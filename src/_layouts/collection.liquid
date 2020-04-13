@@ -1,12 +1,12 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'header'
+  {%- include 'header'
     title: title
     summary: summary
   -%}
-  {%- render 'content' with content -%}
+  {%- include 'content' with content -%}
   {%- assign items = collections.all | includes: 'data.collection',page.fileSlug | reverse -%}
-  {%- render 'section' with items
+  {%- include 'section' with items
     id: 'items'
     title: 'Items in this collection'
     item_modifier: 'inline'

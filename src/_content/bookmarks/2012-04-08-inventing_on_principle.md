@@ -5,7 +5,7 @@ bookmark-of: https://vimeo.com/36579366
 category:
 - Design
 ---
-{% render 'embed' with bookmark-of
+{% include 'embed' with bookmark-of
   poster: 'https://i.vimeocdn.com/video/251172173'
 %}
 

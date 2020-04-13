@@ -1,6 +1,6 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'footer'
+  {%- include 'footer'
     date: date
     type: type
     location: location
@@ -9,11 +9,11 @@
     canonical: canonical
     vocab: vocab
   -%}
-  {%- render 'content' with content
+  {%- include 'content' with content
     properties: 'e-content p-name'
   -%}
-  {%- render 'categories' with category -%}
-  {%- render 'section-remarks' with webmentions
+  {%- include 'categories' with category -%}
+  {%- include 'section-remarks' with webmentions
     id: 'webmentions'
     title: 'Webmentions'
   -%}

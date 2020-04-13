@@ -24,11 +24,11 @@ screenshots:
 - url: /images/projects/mozilla_addons/screenshot_addon.png
   alt: Add-on detail page
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 

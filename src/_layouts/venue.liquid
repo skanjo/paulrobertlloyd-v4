@@ -1,10 +1,10 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'footer'
+  {%- include 'footer'
     date: false
     geo: page.data.geo
   -%}
-  {%- render 'header'
+  {%- include 'header'
     title: title
     url: page.data.url
     vocab: vocab
@@ -18,20 +18,20 @@
         {%- capture position -%}
           {{ page.data.geo.longitude }},{{ page.data.geo.latitude }},15,0.00,0.00
         {%- endcapture -%}
-        {%- render 'map'
+        {%- include 'map'
           overlay: overlay
           position: position
         -%}
       </a>
       <figcaption>
-        {%- render 'address' with page.data.address -%}
+        {%- include 'address' with page.data.address -%}
       </figcaption>
     </figure>
     {{ content | markdown }}
   {%- endcapture -%}
-  {%- render 'content' with content -%}
+  {%- include 'content' with content -%}
   {%- assign related = collections.event | includes: 'data.venue_id',page.fileSlug | reverse -%}
-  {%- render 'section' with related
+  {%- include 'section' with related
     id: 'events'
     title: 'Other events at this venue'
     item_modifier: 'inline'

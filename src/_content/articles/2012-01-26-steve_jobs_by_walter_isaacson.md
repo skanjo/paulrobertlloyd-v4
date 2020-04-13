@@ -28,7 +28,7 @@ category:
 - Steve Jobs
 - Apple
 ---
-{% render 'product' with product %}
+{% include 'product' with product %}
 
 After enough subtle hints, I was happy to unwrap a copy of the [Steve Jobs biography][1] at Christmas. I don’t read many books, and those I do I rarely finish. I couldn’t put this one down. When I intended to read half an hour before bed, I’d usually end up reading for two.
 

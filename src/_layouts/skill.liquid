@@ -1,11 +1,11 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'header'
+  {%- include 'header'
     title: title
     summary: summary
   -%}
   {%- assign items = collections.project | includes: 'data.category',title -%}
-  {%- render 'items' with items
+  {%- include 'items' with items
     grid_size: '12rem'
     component: 'card'
     card_image_present: 'card-square'

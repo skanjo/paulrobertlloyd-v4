@@ -23,11 +23,11 @@ screenshots:
 - url: /images/projects/ning/screenshot_help.png
   alt: Help center
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 
@@ -37,17 +37,17 @@ Working alongside the company’s CEO and designer David Warner, I helped to def
 
 Press coverage of the new product was incredibly positive, and by 2009 the company had helped customers launch over a million social networks.
 
-{% render 'figure'
+{% include 'figure'
   content: '> Instead of doing too many things, the latest iteration of Ning is focused, simple and streamlined. The ease with which one can get going is one of the most impressive aspects of the service.'
   caption: '[Om Malik](https://gigaom.com/2007/02/26/new-ning/)'
 %}
 
-{% render 'figure'
+{% include 'figure'
   content: '> I have to hand it to Ning – it took them well over a year after [their initial beta launch](https://techcrunch.com/2005/10/04/ning-launches/) to fulfill their promise of allowing “anyone” to create social applications, but they’ve done it. Ning relaunches tonight with new functionality and an interface that allows even the most novice of web users to create their own highly customized social network in moments.'
   caption: '[Michael Arrington, TechCrunch](https://techcrunch.com/2007/02/26/ning-in-full/)'
 %}
 
-{% render 'figure'
+{% include 'figure'
   content: '> Ning has completely rebranded as a social network builder. Personally, I think this is a brilliant move. After just a few seconds on the front page, it’s absolutely clear what you can do. You can still make all the same stuff that you always could on Ning—videos, photos, blogs—but now it’s all wrapped up as part of a clearer goal: creating your own social network site.'
   caption: '[Jeremy Keith](https://adactio.com/journal/1265/)'
 %}

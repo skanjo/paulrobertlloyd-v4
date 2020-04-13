@@ -23,11 +23,11 @@ screenshots:
   - url: /images/projects/ec_english/screenshot_school.png
     alt: New York school page
 ---
-{% render 'screenshots' with screenshots.school
+{% include 'screenshots' with screenshots.school
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 
@@ -39,7 +39,7 @@ After undertaking a series of discovery and research activities including an exp
 
 Beyond developing the prototype, I delivered the beginnings of a component library. Each component needed to account for different languages, including those that run right-to-left. Using Flexbox meant these components could be developed independently of language choice, with different writing modes achieved simply by providing the correct `dir` attribute on the `body` element.
 
-{% render 'figure'
+{% include 'figure'
   content: '> The work you did for us a was a great success, basically providing the business case for redesigning the whole site.'
   caption: 'Ric Francis, Development Director'
 %}

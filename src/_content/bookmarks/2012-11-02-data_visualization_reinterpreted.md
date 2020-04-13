@@ -6,7 +6,7 @@ category:
 - Video
 - Peter Saville
 ---
-{% render 'embed' with bookmark-of
+{% include 'embed' with bookmark-of
   poster: 'https://i.vimeocdn.com/video/354067087'
 %}
 

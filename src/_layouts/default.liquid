@@ -69,7 +69,7 @@
   <title>{{ page_title | markdown: 'inline' | strip_html }}</title>
 </head>
 <body data-type="{{ type | default: layout }}">
-{%- render 'banner' -%}
+{%- include 'banner' -%}
 <main class="main{% if vocab %} | {% for root in vocab %} h-{{ root }}{% endfor %}{% endif %}">
   <div class="main__container">
   {%- block 'main' -%}
@@ -77,6 +77,6 @@
   {%- endblock -%}
   </div>
 </main>
-{%- render 'contentinfo' -%}
+{%- include 'contentinfo' -%}
 </body>
 </html>

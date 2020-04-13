@@ -1,18 +1,18 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'footer'
+  {%- include 'footer'
     date: date
   -%}
-  {%- render 'header'
+  {%- include 'header'
     title: title
     summary: false
     url: url
     url_class: 'bookmark-of'
     vocab: vocab
   -%}
-  {%- render 'content' with content -%}
-  {%- render 'categories' with category -%}
-  {%- render 'section-remarks' with webmentions
+  {%- include 'content' with content -%}
+  {%- include 'categories' with category -%}
+  {%- include 'section-remarks' with webmentions
     id: 'webmentions'
     title: 'Webmentions'
   -%}

@@ -7,7 +7,7 @@ category:
 - Space
 - International Space Station
 ---
-{% render 'embed' with bookmark-of
+{% include 'embed' with bookmark-of
   poster: 'https://i.vimeocdn.com/video/629997474'
 %}
 

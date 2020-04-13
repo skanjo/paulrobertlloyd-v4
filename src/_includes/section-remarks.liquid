@@ -7,13 +7,13 @@
 
       <details class="section__main">
         <summary>
-          {% render 'facepile' with section-remarks
+          {% include 'facepile' with section-remarks
             type: title
           %}
         </summary>
 
         <div style="--grid-size: {{ grid_size | default: '100%' }}">
-          {% render 'item/remark' for section-remarks as item
+          {% include 'item/remark' for section-remarks as item
             item_modifier: 'inline'
           %}
         </div>

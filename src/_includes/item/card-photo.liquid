@@ -1,6 +1,6 @@
 <article class="card | h-entry">
   <a class="card__image | u-url" rel="bookmark" href="{{ item.url }}">
-    {%- render 'image' with item.data.photo[0].url
+    {%- include 'image' with item.data.photo[0].url
       alt: item.data.photo[0].alt
       class: 'u-photo'
       ratio: 1.0

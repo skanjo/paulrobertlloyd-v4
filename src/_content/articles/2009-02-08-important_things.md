@@ -8,7 +8,7 @@ category:
 - Television
 - Demetri Martin
 ---
-{% render 'figure' with '/images/2009/02/important_things.jpg'
+{% include 'figure' with '/images/2009/02/important_things.jpg'
   caption: 'Promotion for Important Things.'
 %}
 

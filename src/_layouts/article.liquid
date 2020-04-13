@@ -1,23 +1,23 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'footer'
+  {%- include 'footer'
     date: date
     location: location
     canonical: canonical
     sources: sources
   -%}
-  {%- render 'header'
+  {%- include 'header'
     title: title
     summary: false
     vocab: vocab
   -%}
-  {%- render 'content' with content -%}
-  {%- render 'categories' with category -%}
-  {%- render 'section-remarks' with remarks
+  {%- include 'content' with content -%}
+  {%- include 'categories' with category -%}
+  {%- include 'section-remarks' with remarks
     id: 'remarks'
     title: 'Remarks'
   -%}
-  {%- render 'section-remarks' with webmentions
+  {%- include 'section-remarks' with webmentions
     id: 'webmentions'
     title: 'Webmentions'
   -%}
@@ -25,7 +25,7 @@
     {%- assign related = collections.collection | where: 'fileSlug',this | first -%}
     {%- capture section_title %}More from the <a href="{{ related.url }}">{{ related.data.title }}</a> collection{%- endcapture -%}
     {%- assign articles = collections.article | includes: 'data.collection', this | excludes: 'url',page.url | reverse -%}
-    {%- render 'section' with articles
+    {%- include 'section' with articles
       id: 'related'
       title: section_title
       scrollable: true

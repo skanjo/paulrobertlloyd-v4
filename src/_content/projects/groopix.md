@@ -22,11 +22,11 @@ screenshots:
 - url: /images/projects/groopix/screenshot_collection.png
   alt: Collection page
 ---
-{% render 'screenshots' with screenshots
+{% include 'screenshots' with screenshots
   alignment: 'bleed'
 %}
 
-{% render 'aside'
+{% include 'aside'
   aside: aside
 %}
 

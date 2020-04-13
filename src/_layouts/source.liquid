@@ -1,12 +1,12 @@
 {%- layout 'default' -%}
 {%- block 'main' -%}
-  {%- render 'header'
+  {%- include 'header'
     title: title
     summary: summary
     url: page.data.url
   -%}
   {%- assign items = collections.article | includes: 'data.tags',tag -%}
-  {%- render 'items' with items
+  {%- include 'items' with items
     item_modifier: 'inline'
   -%}
 {%- endblock -%}

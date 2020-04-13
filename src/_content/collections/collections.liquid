@@ -10,7 +10,7 @@ eleventyComputed:
   page_title: "{{ introduction }} · {{ app.title }}"
 ---
 {%- assign collections = collections.collection | sort_natural: 'fileSlug' -%}
-{%- render 'items' with collections
+{%- include 'items' with collections
   component: 'section'
   grid_size: '12rem'
 -%}

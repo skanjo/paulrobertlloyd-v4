@@ -3,7 +3,7 @@
     {{ item.templateContent -}}
     {% if item.data.photo %}
       {%- if item.data.photo.size > 1 %}{% assign image_ratio = 1.0 %}{% endif -%}
-      {%- render 'photos' with item.data.photo
+      {%- include 'photos' with item.data.photo
         image_class: 'u-photo'
         image_ratio: image_ratio | default: false
       -%}

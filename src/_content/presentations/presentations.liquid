@@ -12,7 +12,7 @@ changefreq: weekly
 priority: 0.9
 ---
 {%- assign featured = collections.presentation | includes: 'data.tags','featured' | reverse -%}
-{%- render 'section' with featured
+{%- include 'section' with featured
   id: 'featured'
   title: 'Select presentations'
   scrollable: true
@@ -21,7 +21,7 @@ priority: 0.9
   image_preset: 'card'
 -%}
 {%- assign appearances = collections.event | where: 'data.participant' | reverse -%}
-{%- render 'section' with appearances
+{%- include 'section' with appearances
   id: 'appearances'
   title: 'Events I’ve spoken at'
   items_limit: 16
