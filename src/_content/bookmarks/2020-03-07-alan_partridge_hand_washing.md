@@ -6,6 +6,6 @@ category:
 - Video
 - Television
 ---
-{% include 'embed' with bookmark-of %}
+{% embed bookmark-of %}
 
 After the pee and poo has landed, please make sure that you’re clean handed.

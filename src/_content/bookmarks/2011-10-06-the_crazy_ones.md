@@ -1,13 +1,13 @@
 ---
 title: The Crazy Ones
 date: 2011-10-06T20:32:05+01:00
-bookmark-of: https://www.youtube.com/watch?v=8rwsuXHA7RA
+bookmark-of: https://www.youtube.com/watch?v=GEPhLqwKo6g
 category:
 - Steve Jobs
 - Apple
 - Advertising
 ---
-{% include 'embed' with bookmark-of %}
+{% embed bookmark-of %}
 
 I will never grow tired of this commercial. Even less so this version narrated by Steve Jobs.
 

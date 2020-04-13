@@ -24,6 +24,9 @@ module.exports = function (eleventy) {
   eleventy.addFilter('strip_mentions', require('./lib/filters/strip-mentions.js'));
   eleventy.addFilter('tokenize', require('./lib/filters/tokenize.js'));
 
+  // Shortcodes
+  eleventy.addShortcode('embed', require('./lib/shortcodes/embed.js'))
+
   // Plugins
   eleventy.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'));
 

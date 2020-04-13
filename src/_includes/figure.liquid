@@ -2,11 +2,7 @@
 {%- if content %}
   {{ content | markdown }}
 {%- elsif embed %}
-  {%- include 'embed'
-    embed: embed
-    poster: embed_poster
-    ratio: embed_ratio | default: false
-  -%}
+  {%- embed embed -%}
 {%- else %}
   {%- include 'image' with figure
     preset: image_preset
