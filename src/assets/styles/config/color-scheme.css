@@ -1,0 +1,70 @@
+%light-color-scheme {
+  /* Colour palette */
+  --color-accent: var(--color-accent-light);
+  --color-neutral-darkest: hsl(var(--tint) 16%);
+  --color-neutral-darker: hsl(var(--tint) 36%);
+  --color-neutral-dark: hsl(var(--tint) 44%);
+  --color-neutral: hsl(var(--tint) 50%);
+  --color-neutral-light: hsl(var(--tint) 80%);
+  --color-neutral-lighter: hsl(var(--tint) 88%);
+  --color-neutral-lightest: hsl(var(--tint) 96%);
+
+  /* Colour assignments */
+  --color-background: white;
+  --color-offset: var(--color-neutral-lightest);
+  --color-outline: hsl(var(--tint) 16% / 20%);
+  --color-shadow: hsl(var(--tint) 16% / 10%);
+  --color-rule: var(--color-neutral-lightest);
+
+  --color-text: var(--color-neutral-darkest);
+  --color-link: var(--color-accent);
+  --color-link-underline: var(--color-neutral-light);
+
+  --color-delete: hsl(0 100% 80% / 75%);
+  --color-highlight: hsl(60 100% 80% / 75%);
+  --color-insert: hsl(120 100% 80% / 75%);
+  --color-focus: hsl(40 100% 50%);
+
+  /* Typography */
+  --line-height-tight: 1.25;
+  --line-height-loose: 1.414;
+  --line-height-prose: 1.667;
+  --word-spacing: 0;
+}
+
+%dark-color-scheme {
+  /* Colour palette */
+  --color-accent: var(--color-accent-dark);
+  --color-neutral-darkest: hsl(var(--tint) 96%);
+  --color-neutral-darker: hsl(var(--tint) 88%);
+  --color-neutral-dark: hsl(var(--tint) 80%);
+  --color-neutral: hsl(var(--tint) 50%);
+  --color-neutral-light: hsl(var(--tint) 44%);
+  --color-neutral-lighter: hsl(var(--tint) 36%);
+  --color-neutral-lightest: hsl(var(--tint) 16%);
+
+  /* Colour assignments */
+  --color-background: hsl(var(--tint) 8%);
+  --color-shadow: black;
+  --color-highlight: hsl(60 100% 70% / 15%);
+
+  /* Typography */
+  --line-height-tight: calc(1.25em + 0.25vw);
+  --line-height-loose: calc(1.414em + 0.25vw);
+  --line-height-prose: calc(1.667em + 0.25vw);
+  --word-spacing: 0.05em;
+}
+
+:root {
+  @extend %light-color-scheme;
+  --tint: 228 8%;
+  --color-scheme: 'light';
+
+  @media (prefers-color-scheme: dark) {
+    --color-scheme: 'dark';
+  }
+}
+
+[data-color-scheme="true"] {
+  @extend %dark-color-scheme;
+}

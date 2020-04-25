@@ -1,0 +1,6 @@
+.color-scheme {
+  color: var(--color-neutral-darker);
+  cursor: pointer;
+  margin-inline-start: var(--space-inline);
+  padding: var(--inset-squished);
+}

@@ -1,39 +1,8 @@
 :root {
-  /* Neutral palette */
-  --tint: 228 8%;
-  --color-neutral-darkest: hsl(var(--tint) 16%);
-  --color-neutral-darker: hsl(var(--tint) 36%);
-  --color-neutral-dark: hsl(var(--tint) 44%);
-  --color-neutral: hsl(var(--tint) 50%);
-  --color-neutral-light: hsl(var(--tint) 80%);
-  --color-neutral-lighter: hsl(var(--tint) 88%);
-  --color-neutral-lightest: hsl(var(--tint) 96%);
-
-  /* Colour assignments */
-  --color-accent: var(--color-accent-light);
-  --color-background: white;
-  --color-offset: var(--color-neutral-lightest);
-  --color-outline: hsl(var(--tint) 16% / 20%);
-  --color-shadow: hsl(var(--tint) 16% / 10%);
-  --color-rule: var(--color-neutral-lightest);
-
-  --color-text: var(--color-neutral-darkest);
-  --color-link: var(--color-accent);
-  --color-link-underline: var(--color-neutral-light);
-
-  --color-delete: hsl(0 100% 80% / 75%);
-  --color-highlight: hsl(60 100% 80% / 75%);
-  --color-insert: hsl(120 100% 80% / 75%);
-  --color-focus: hsl(40 100% 50%);
-
   /* Typography */
   --font-family-sans: "Untitled", sans-serif;
   --font-family-monospace: "Source Code Pro", monospace;
-  --line-height-tight: 1.25;
-  --line-height-loose: 1.414;
-  --line-height-prose: 1.667;
   --line-measure: 42.5rem;
-  --word-spacing: 0;
 
   /* Borders */
   --border-width-thin: 1px;
@@ -94,25 +63,5 @@
 @media print {
   :root {
     --line-measure: 50rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-neutral-darkest: hsl(var(--tint) 96%);
-    --color-neutral-darker: hsl(var(--tint) 88%);
-    --color-neutral-dark: hsl(var(--tint) 80%);
-    --color-neutral: hsl(var(--tint) 50%);
-    --color-neutral-light: hsl(var(--tint) 44%);
-    --color-neutral-lighter: hsl(var(--tint) 36%);
-    --color-neutral-lightest: hsl(var(--tint) 16%);
-    --color-accent: var(--color-accent-dark);
-    --color-background: hsl(var(--tint) 8%);
-    --color-shadow: black;
-    --color-highlight: hsl(60 100% 70% / 15%);
-    --line-height-tight: calc(1.25em + 0.5vw);
-    --line-height-loose: calc(1.414em + 0.5vw);
-    --line-height-prose: calc(1.667em + 0.5vw);
-    --word-spacing: 0.05em;
   }
 }
